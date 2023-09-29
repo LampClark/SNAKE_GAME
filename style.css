@@ -40,3 +40,6 @@ body {
 .board-game .food {
     background: rgb(255, 61, 3);
 }
+.board-game .head {
+    background: rgb(255, 38, 74);
+}
