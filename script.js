@@ -58,13 +58,14 @@ const changeDirection = (b) => {
                 velocityY = 0;
             }
     }
-    initGame();
 }
 
 const initGame = () => {
     let htmlMarkup = `<div class="food" style="grid-area: ${foodY} / ${foodX}"></div>`;
 
-    
+    if(snakeX === foodX && snakeY === foodY) {
+        changeFoodPosition();
+    }
 
     snakeX += velocityX;
     snakeY += velocityY;
@@ -73,5 +74,5 @@ const initGame = () => {
     boardGame.innerHTML = htmlMarkup;
 }
 changeFoodPosition();
-initGame();
+setInterval(initGame, 68);
 document.addEventListener("keydown", changeDirection);
