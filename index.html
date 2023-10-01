@@ -8,13 +8,24 @@
 </head>
 <body>
     <div class="header">
+        <div class="welcome-message">
+            <h1>Welcome to Snake Game!</h1>
+        </div>
+        <div class="instructions">
+            <h2>How to play:</h2>
+            <p>- Use Arrow keys or (W/A/S/D or I/J/K/L) to move.</p>
+            <p>- Try to avoid getting hit by the walls or yourself!</p>
+            <p>HAVE FUN !</p>
+        </div>
         <div class="game-details">
-            <span class="score">Score: 5</span>
+            <span class="score">Score: 0</span>
             <span class="high-score">High Score: 10</span>
         </div>
         <div class="board-game"></div>
     </div>
     
+    <audio id="gameOverSound" src="dead.wav" preload="auto"></audio>
+    <audio id="eatSound" src="eat.mp3" preload="auto"></audio>
     <script src="script.js" defer ></script>
 </body>
 </html>
