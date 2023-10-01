@@ -11,7 +11,50 @@ body {
     background: rgb(55, 55, 55);
 }
 
+.welcome-message {
+    background-color: rgb(40, 30, 30);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 5px 10px 34px 25px rgb(238, 61, 120);
+    z-index: 1;
+    text-align: center;
+}
+
+.welcome-message h1{
+    margin: 0;
+    line-height: 1;
+    color: rgb(255, 109, 165);
+}
+
+.instructions {
+    background-color: rgb(40, 30, 30);
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 5px 10px 34px 25px rgb(238, 61, 120);
+    z-index: 1; /* Ensures it's above other elements */
+    text-align: center;
+    color: rgb(255, 113, 160); /* Text color */
+}
+
+.instructions h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.instructions p {
+    margin-bottom: 7px;
+}
+
 .header {
+    margin-top: 10px;
+    margin-bottom: 100px;
     width: 65vmin;
     height: 70vmin;
     display: flex;
@@ -23,7 +66,7 @@ body {
     box-shadow: 5px 10px 34px 25px rgb(238, 61, 120);
 }
 .game-details {
-    color: rgb(234, 53, 83);
+    color: rgb(255, 125, 175);
     font-size: 1.2rem;
     font-weight: 500;
     padding: 20px 27px;
@@ -41,5 +84,5 @@ body {
     background: rgb(255, 61, 3);
 }
 .board-game .head {
-    background: rgb(255, 38, 74);
+    background: linear-gradient(350deg, red, rgb(255, 80, 167), pink, rgb(255, 130, 182));
 }
